@@ -1,0 +1,538 @@
+/* Page defaults */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 24px;
+}
+
+body {
+  margin: 0;
+  background: #fafbf7;
+  color: #202d36;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.wrap {
+  width: calc(100% - 48px);
+  max-width: 1040px;
+  margin: auto;
+}
+
+a {
+  color: #286451;
+  text-underline-offset: 4px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:focus-visible, summary:focus-visible {
+  outline: 3px solid #ad6b17;
+  outline-offset: 5px;
+}
+
+/* Header and navigation */
+.site-header {
+  padding: 24px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: center;
+}
+
+.name {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 19px;
+  font-weight: 700;
+  color: #202d36;
+  text-decoration: none;
+}
+
+.monogram {
+  width: 37px;
+  height: 37px;
+  display: grid;
+  place-items: center;
+  background: #1d2f38;
+  color: #d2ed9c;
+  border-radius: 5px;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+  font-size: 14px;
+}
+
+nav a {
+  color: #202d36;
+  text-decoration: none;
+}
+
+/* Introduction and education. Grid places the two panels in columns. */
+.intro {
+  position: relative;
+  padding: 48px 42px;
+  margin: 10px 0 42px;
+  display: grid;
+  grid-template-columns: 1.65fr 1fr;
+  gap: 46px;
+  align-items: start;
+  color: #f5f8f4;
+  background-color: #1d2f38;
+  background-image: linear-gradient(120deg, transparent 65%, #29434a 100%);
+  border-radius: 10px;
+}
+
+/* clamp sets a minimum, a flexible size and a maximum for this heading. */
+h1 {
+  font-size: clamp(37px, 5vw, 56px);
+  line-height: 1.12;
+  letter-spacing: -1.5px;
+  margin: 18px 0 20px;
+}
+
+h1 span {
+  color: #d2ed9c;
+}
+
+h2 {
+  font-size: 29px;
+  line-height: 1.25;
+  letter-spacing: -.5px;
+  margin: 7px 0 16px;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 1.4;
+  margin: 0 0 8px;
+}
+
+p {
+  margin: 0 0 17px;
+}
+
+.lead {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.availability {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  color: #d2ed9c;
+  background: #334b45;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+.intro-skills {
+  color: #d2ed9c;
+  font-size: 13px;
+  margin: 25px 0 0;
+}
+
+.intro-skills span {
+  margin: 0 9px;
+  color: #c0cdd0;
+}
+
+.eyebrow {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  color: #566674;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.education {
+  border-left: 2px solid #90bba2;
+  padding: 8px 0 2px 23px;
+  margin-top: 8px;
+}
+
+.education h2 {
+  font-size: 22px;
+}
+
+.education p {
+  font-size: 14px;
+}
+
+.education .eyebrow, .education .muted {
+  color: #c5d2d4;
+}
+
+.results {
+  margin: 20px 0 0;
+}
+
+.results div {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 9px 0;
+  border-top: 1px solid #4c6267;
+}
+
+dt {
+  font-size: 13px;
+  color: #c5d2d4;
+}
+
+dd {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.muted, .section-note {
+  color: #566674;
+}
+
+.section-note {
+  font-size: 14px;
+}
+
+/* Links styled as buttons */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin: 26px 0 0;
+}
+
+.button {
+  display: inline-block;
+  padding: 11px 18px;
+  background: #286451;
+  color: white;
+  border: 1px solid #286451;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background .15s ease;
+}
+
+.button:hover {
+  background: #1d4c3d;
+  text-decoration: none;
+}
+
+.text-link {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.intro .button {
+  background: #d2ed9c;
+  border-color: #d2ed9c;
+  color: #1d2f38;
+}
+
+.intro .button:hover {
+  background: #e0f4ba;
+}
+
+.intro .text-link {
+  color: #f5f8f4;
+}
+
+/* Shared section spacing and About layout */
+.section {
+  border-top: 1px solid #d9e0da;
+  padding: 48px 0;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 65px;
+}
+
+.skills {
+  font-size: 14px;
+  margin-bottom: 0;
+  padding: 14px 18px;
+  border-left: 3px solid #286451;
+  background: #edf3e7;
+}
+
+.project-stack {
+  font-size: 14px;
+  color: #286451;
+  font-weight: 700;
+}
+
+.project-intro {
+  max-width: 760px;
+}
+
+figcaption {
+  font-size: 12px;
+  color: #566674;
+  margin: 10px 0;
+}
+
+/* Future ideas and expandable text */
+.ideas {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 65px;
+}
+
+.idea-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.idea-list li {
+  display: flex;
+  gap: 19px;
+  padding: 0 0 25px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #d9e0da;
+}
+
+.idea-list li:last-child {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.idea-number {
+  font-size: 13px;
+  color: #286451;
+  background: #edf3e7;
+  height: 30px;
+  min-width: 30px;
+  display: grid;
+  place-items: center;
+  border-radius: 4px;
+}
+
+.idea-list p {
+  font-size: 15px;
+  margin: 0;
+}
+
+details {
+  margin-top: 10px;
+}
+
+summary {
+  cursor: pointer;
+  color: #286451;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.idea-list details p {
+  color: #566674;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+/* Contact details, footer and keyboard skip link */
+.contact {
+  padding: 35px;
+  margin: 10px 0 40px;
+  background: #edf3e7;
+  border: 0;
+  border-radius: 8px;
+}
+
+.contact p {
+  max-width: 700px;
+}
+
+.email {
+  font-size: clamp(20px, 3vw, 28px);
+  font-weight: 700;
+  display: inline-block;
+  margin: 3px 0 17px;
+  overflow-wrap: anywhere;
+}
+
+footer {
+  padding: 22px 0;
+  border-top: 1px solid #d9e0da;
+  font-size: 12px;
+  color: #566674;
+}
+
+.skip {
+  position: absolute;
+  left: 16px;
+  top: -80px;
+  background: #202d36;
+  color: white;
+  padding: 8px 14px;
+  z-index: 3;
+}
+
+.skip:focus {
+  top: 8px;
+}
+
+/* Project screenshots. Two college projects share a row. */
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+  margin-top: 30px;
+}
+
+.portfolio-project {
+  min-width: 0;
+  border-top: 2px solid #d9e0da;
+  padding-top: 20px;
+}
+
+.portfolio-project h3 {
+  font-size: 22px;
+}
+
+.portfolio-project p {
+  font-size: 15px;
+}
+
+.portfolio-project .project-label {
+  font-size: 12px;
+  color: #566674;
+  margin-bottom: 8px;
+}
+
+.portfolio-project .project-stack {
+  font-size: 13px;
+}
+
+.portfolio-project .project-focus {
+  color: #566674;
+  font-size: 14px;
+}
+
+.project-evidence {
+  margin: 20px 0 0;
+}
+
+.project-evidence img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #d9e0da;
+  border-radius: 4px;
+  background: white;
+}
+
+.project-evidence a {
+  display: block;
+}
+
+.extra-evidence {
+  margin-top: 15px;
+}
+
+.extra-evidence .project-evidence {
+  margin-top: 12px;
+}
+
+/* The tracker uses both columns, with text beside the screenshot. */
+.tracker-example {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 30px;
+}
+
+.tracker-example .project-evidence {
+  margin-top: 0;
+}
+
+/* Small screens: stack columns and reduce spacing. */
+@media (max-width: 720px) {
+  .wrap {
+    width: calc(100% - 32px);
+  }
+
+  .site-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
+    padding: 20px 0;
+  }
+
+  nav {
+    gap: 22px;
+  }
+
+  .intro {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 30px 23px;
+    margin-bottom: 30px;
+  }
+
+  .education {
+    margin: 0;
+  }
+
+  .section {
+    padding: 34px 0;
+  }
+
+  .about, .ideas {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .contact {
+    padding: 26px 22px;
+  }
+
+  .actions {
+    gap: 18px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  .projects-grid, .tracker-example {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .tracker-example {
+    grid-column: auto;
+  }
+
+}
+
+/* Respect the visitor’s reduced-motion preference. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .button {
+    transition: none;
+  }
+
+}

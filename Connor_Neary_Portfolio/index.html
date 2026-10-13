@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Page setup -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Connor Neary | Software Development Portfolio</title>
+  <meta name="description" content="Connor Neary, a third-year Software Design student at TUS Athlone, seeking a software placement from January 2027. Projects, background and future ideas.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header and links to the sections below -->
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="name" href="#main"><span class="monogram" aria-hidden="true">CN</span>Connor Neary</a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#project">Projects</a>
+      <a href="#ideas">Ideas</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main id="main" class="wrap">
+
+    <!-- Introduction and college results -->
+    <section class="intro" aria-labelledby="intro-title">
+      <div>
+        <p class="availability">Software placement · January 2027</p>
+        <h1 id="intro-title">Hi, I’m <span>Connor.</span></h1>
+        <p class="lead">I’m a third-year Software Design student at TUS Athlone, based in Tullamore.</p>
+        <p>I’m interested in backend development, databases and cloud computing. I’m looking for a placement where I can contribute to a team and turn what I’m learning into useful software.</p>
+        <div class="actions">
+          <a class="button" href="#project">View my projects</a>
+          <a class="button" href="downloads/Connor_Neary_CV.pdf" download>Download my CV</a>
+          <a class="text-link" href="mailto:coneary12@gmail.com">Get in touch ↗</a>
+        </div>
+        <p class="intro-skills">Java <span> / </span> Python <span> / </span> SQL</p>
+      </div>
+      <aside class="education" aria-label="Education and results">
+        <p class="eyebrow">Education</p>
+        <h2>TUS Athlone</h2>
+        <p>Software Design with Artificial Intelligence for Cloud Computing</p>
+        <p class="muted">Currently in Year 3</p>
+        <dl class="results">
+          <div>
+            <dt>Year 1 average</dt>
+            <dd>71.08%</dd>
+          </div>
+          <div>
+            <dt>Year 2 average</dt>
+            <dd>70.91%</dd>
+          </div>
+        </dl>
+      </aside>
+    </section>
+
+    <!-- About me -->
+    <section id="about" class="section about" aria-labelledby="about-title">
+      <div>
+        <p class="eyebrow">01 · A little background</p>
+        <h2 id="about-title">About me</h2>
+        <p class="section-note">From practical work to software development.</p>
+      </div>
+      <div>
+        <p>I came to software after training in metal fabrication, and I’ve also worked in hospitality. Those roles gave me experience working with people, taking responsibility and solving practical problems under pressure.</p>
+        <p>At college I’ve worked with Java, Python, SQL, HTML and CSS. My coursework includes a gym membership REST API, a country weather dashboard, Power BI dashboards, and a group newsagent delivery system where I’m responsible for publications.</p>
+        <p>Outside college, I’m interested in combat sports and fitness. I like the idea of building small applications around subjects I actually use or enjoy.</p>
+        <p class="skills"><strong>Tools I’ve used</strong><br>Spring Boot · PyQt5 · SQLite · MySQL · DataGrip · Power BI · GitHub</p>
+      </div>
+    </section>
+
+    <!-- Selected projects and screenshots -->
+    <section id="project" class="section" aria-labelledby="project-title">
+      <p class="eyebrow">02 · Selected work</p>
+      <h2 id="project-title">Projects and college work</h2>
+      <p class="project-intro">A few examples of what I’ve worked on, with screenshots and a short explanation of each.</p>
+
+      <div class="projects-grid">
+        <article class="portfolio-project" aria-labelledby="gym-api-title">
+          <p class="project-label">College assignment</p>
+          <h3 id="gym-api-title">Gym Membership REST API</h3>
+          <p class="project-stack">Java · Spring Boot · Spring Data JPA · H2 · Postman</p>
+          <p>An API for creating, viewing, updating and deleting gym membership records. It exchanges JSON data and returns a 404 response when a requested member cannot be found.</p>
+          <p class="project-focus"><strong>What I worked with:</strong> HTTP requests, Java entity mapping and database access, with Postman used to check responses.</p>
+          <!-- A relative file link downloads the project ZIP. -->
+          <p><a class="text-link" href="downloads/Gym_Membership_API_Source.zip" download>Download API source (ZIP) ↗</a></p>
+          <figure class="project-evidence">
+            <a href="assets/gym-api-members.png" target="_blank" rel="noopener">
+              <img src="assets/gym-api-members.png" alt="Postman sending GET /members and showing a 200 OK response with gym membership records as JSON" width="942" height="628" loading="lazy">
+            </a>
+            <figcaption>GET /members returning JSON in Postman. Screenshot from my assignment report.</figcaption>
+          </figure>
+
+          <!-- details and summary expand the extra screenshot without JavaScript. -->
+          <details class="extra-evidence">
+            <summary>See the missing-member response</summary>
+            <figure class="project-evidence">
+              <a href="assets/gym-api-not-found.png" target="_blank" rel="noopener">
+                <img src="assets/gym-api-not-found.png" alt="Postman requesting /members/9 and receiving a 404 Not Found response" width="1252" height="263" loading="lazy">
+              </a>
+              <figcaption>A request for an unavailable member returns 404 Not Found.</figcaption>
+            </figure>
+          </details>
+        </article>
+
+        <article class="portfolio-project" aria-labelledby="weather-title">
+          <p class="project-label">College assignment</p>
+          <h3 id="weather-title">Country Weather Dashboard</h3>
+          <p class="project-stack">HTML · CSS/W3CSS · JavaScript · Chart.js · REST APIs</p>
+          <p>A dashboard that filters countries by name, capital, language and currency. Selecting a country loads its details and plots seven days of minimum and maximum temperatures using REST Countries and Open-Meteo.</p>
+          <p class="project-focus"><strong>What I worked with:</strong> fetching API data, combining filters and updating page content and charts from user input.</p>
+          <!-- A relative file link downloads the project ZIP. -->
+          <p><a class="text-link" href="downloads/Country_Weather_Dashboard_Source.zip" download>Download dashboard source (ZIP) ↗</a></p>
+          <figure class="project-evidence">
+            <a href="assets/country-weather-forecast.png" target="_blank" rel="noopener">
+              <img src="assets/country-weather-forecast.png" alt="Country weather dashboard filtered to English-speaking countries, with Ireland selected and a seven-day minimum and maximum temperature chart" width="1237" height="634" loading="lazy">
+            </a>
+            <figcaption>Country details and a seven-day chart. Screenshot from my assignment report.</figcaption>
+          </figure>
+
+          <!-- details and summary expand the extra screenshot without JavaScript. -->
+          <details class="extra-evidence">
+            <summary>See the dashboard before selection</summary>
+            <figure class="project-evidence">
+              <a href="assets/country-weather-start.png" target="_blank" rel="noopener">
+                <img src="assets/country-weather-start.png" alt="Dashboard initial state showing country filters and an alphabetical country list, before a country has been selected" width="1381" height="522" loading="lazy">
+              </a>
+              <figcaption>The country list loads first; the chart appears after selecting a country.</figcaption>
+            </figure>
+          </details>
+        </article>
+
+        <!-- Personal project -->
+        <article class="portfolio-project tracker-example" aria-labelledby="tracker-title">
+          <div>
+            <p class="project-label">Personal project</p>
+            <h3 id="tracker-title">Internship Application Tracker</h3>
+            <p class="project-stack">Python · PyQt5 · SQLite</p>
+            <p>A small desktop tool for recording applications, updating their status and checking deadlines. It includes search, status filters and CSV export, with records stored locally in SQLite.</p>
+            <p class="project-focus"><strong>What I’m reviewing:</strong> connecting form actions to database operations, validating inputs and keeping the displayed records in sync.</p>
+            <!-- A relative file link downloads the project ZIP. -->
+            <p><a class="text-link" href="downloads/Internship_Tracker_GitHub_Ready.zip" download>Download tracker source (ZIP) ↗</a></p>
+          </div>
+          <figure class="project-evidence">
+            <a href="assets/internship-tracker-details.png" target="_blank" rel="noopener">
+              <img src="assets/internship-tracker-details.png" alt="Internship tracker demo with one fictional application selected and its details loaded into the editing form" width="1180" height="720" loading="lazy">
+            </a>
+            <figcaption>Selecting a row loads its editing form. This demo uses fictional application records.</figcaption>
+          </figure>
+        </article>
+      </div>
+    </section>
+
+    <!-- Future ideas -->
+    <section id="ideas" class="section ideas" aria-labelledby="ideas-title">
+      <div>
+        <p class="eyebrow">03 · Looking ahead</p>
+        <h2 id="ideas-title">What I’d like to build</h2>
+        <p>Personal projects I’d like to develop alongside college, one manageable feature at a time.</p>
+        <p class="section-note">These are future ideas. Ideas I’d like to develop further alongside college.</p>
+      </div>
+      <ul class="idea-list">
+        <li>
+          <span class="idea-number" aria-hidden="true">01</span>
+          <div>
+            <h3>Combat sports data explorer</h3>
+            <p>A clearer way to browse fighters, events and results, built around my interest in MMA and boxing.</p>
+            <details>
+              <summary>Where I’d start</summary>
+              <p>A small database and fighter/event search. More detailed statistics and comparisons could come later.</p>
+            </details>
+          </div>
+        </li>
+        <li>
+          <span class="idea-number" aria-hidden="true">02</span>
+          <div>
+            <h3>Offline desktop assistant</h3>
+            <p>A Python assistant for useful local tasks, with commands I can understand and extend myself.</p>
+            <details>
+              <summary>Where I’d start</summary>
+              <p>A typed command menu for notes and local tools. Voice input would be a later step.</p>
+            </details>
+          </div>
+        </li>
+        <li>
+          <span class="idea-number" aria-hidden="true">03</span>
+          <div>
+            <h3>Gym booking improvements</h3>
+            <p>Extend my college application with database storage and more useful membership and booking checks.</p>
+            <details>
+              <summary>Where I’d start</summary>
+              <p>Related member, class and booking records, followed by duplicate-booking and capacity checks.</p>
+            </details>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Contact details -->
+    <section id="contact" class="section contact" aria-labelledby="contact-title">
+      <p class="eyebrow">January 2027 placement</p>
+      <h2 id="contact-title">Get in touch</h2>
+      <p>I’m interested in software development opportunities, particularly work involving backend systems and databases.</p>
+      <a class="email" href="mailto:coneary12@gmail.com">coneary12@gmail.com</a>
+      <p class="muted">Tullamore, Co. Offaly · Studying in Athlone</p>
+    </section>
+  </main>
+  <footer class="wrap">Connor Neary · Software Design student</footer>
+</body>
+</html>
