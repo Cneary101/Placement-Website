@@ -1,0 +1,87 @@
+/* Basic page settings */
+body, h1, h2, h3 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #202d36;
+}
+
+.page {
+  max-width: 1200px;
+  margin: auto;
+  padding: 16px;
+}
+
+/* Introduction */
+.hero {
+  background-color: #1d2f38;
+  color: white;
+  padding: 28px 24px;
+}
+
+.hero h1 {
+  font-size: 44px;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.intro {
+  font-size: 19px;
+  max-width: 760px;
+}
+
+/* Project and sidebar headings */
+h2 {
+  font-size: 26px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+/* Button colour */
+.green {
+  background-color: #286451;
+  color: white;
+}
+
+/* Screenshots and captions */
+.project-image {
+  width: 100%;
+  height: auto;
+  border: 1px solid #dddddd;
+}
+
+figure {
+  margin: 16px 0;
+}
+
+figcaption, caption {
+  color: #566674;
+  font-size: 12px;
+  text-align: left;
+  margin: 8px 0;
+}
+
+/* Expandable screenshots and ideas */
+details {
+  margin-bottom: 16px;
+}
+
+summary {
+  cursor: pointer;
+  color: #286451;
+  font-weight: bold;
+}
+
+a {
+  text-underline-offset: 3px;
+}
+
+#contact a {
+  font-size: 20px;
+  overflow-wrap: anywhere;
+}

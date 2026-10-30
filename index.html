@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Connor Neary | Software Development Portfolio</title>
+    <meta name="description" content="Connor Neary, a Software Design student at TUS Athlone seeking placement from January 2027. College projects, screenshots and source code.">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="w3-light-grey">
+    <div id="top" class="page">
+      <!-- Navigation -->
+      <nav class="w3-bar w3-white">
+        <a href="#project" class="w3-bar-item w3-button">Projects</a>
+        <a href="#about" class="w3-bar-item w3-button">About</a>
+        <a href="#ideas" class="w3-bar-item w3-button">Ideas</a>
+        <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+      </nav>
+      <!-- Introduction -->
+      <header class="w3-container hero">
+        <p class="w3-small">SOFTWARE PLACEMENT · JANUARY 2027</p>
+        <h1>Connor Neary</h1>
+        <p class="intro">Third-year Software Design student at TUS Athlone, based in Tullamore. Interested in backend development, databases and cloud computing.</p>
+        <p>
+          <a href="#project" class="w3-button w3-white">View my projects</a>
+          <a href="downloads/Connor_Neary_CV.pdf" class="w3-button green" download="">Download my CV</a>
+        </p>
+      </header>
+      <div class="w3-row-padding w3-margin-top">
+        <!-- Projects appear first on smaller screens -->
+        <main class="w3-twothird">
+          <section id="project">
+            <h2>Projects and college work</h2>
+            <p>A few examples of my work, with screenshots, a short explanation and the source files.</p>
+            <!-- Latest Python assignment -->
+            <article class="w3-card w3-white w3-margin-bottom">
+              <div class="w3-container w3-padding-16">
+                <p class="w3-small w3-text-grey">Latest college assignment · Year 3</p>
+                <h3 id="mma-title">MMA Fight Results Tracker</h3>
+                <p class="w3-small w3-text-grey">Python · PyQt5 · SQLite · SQLAlchemy</p>
+                <p>A desktop application for recording MMA fighters and completed fights. Add, edit and delete fight results, search by either fighter, and filter by weight class or method. Records are saved locally in SQLite.</p>
+                <p class="w3-small">
+                  <strong>What I worked with:</strong> SQLAlchemy ORM, two linked tables, input validation and protecting fighters that are used in saved fights.</p>
+                <p>
+                  <a href="downloads/MMA_Fight_Results_Tracker_Source.zip" download class="w3-button green">Download source (ZIP)</a>
+                </p>
+                <figure>
+                  <a href="assets/mma-tracker-edit.png" target="_blank" rel="noopener">
+                    <img src="assets/mma-tracker-edit.png" alt="MMA Fight Results Tracker with saved fighters and fights, and one fight loaded into the editing form" class="project-image">
+                  </a>
+                  <figcaption>Editing a saved fight in the application. Fictional demonstration records are shown.</figcaption>
+                </figure>
+                <details>
+                  <summary>See fighter search and filtering</summary>
+                  <figure>
+                    <a href="assets/mma-tracker-search.png" target="_blank" rel="noopener">
+                      <img src="assets/mma-tracker-search.png" alt="MMA tracker searching for Alex and filtering to Lightweight fights" class="project-image">
+                    </a>
+                    <figcaption>Searching by fighter name and filtering by weight class. The results update below the forms.</figcaption>
+                  </figure>
+                </details>
+              </div>
+            </article>
+            <!-- Two earlier college assignments -->
+            <div class="w3-row-padding">
+              <div class="w3-col l6">
+                <article class="w3-card w3-white w3-margin-bottom">
+                  <div class="w3-container w3-padding-16">
+                    <p class="w3-small w3-text-grey">College assignment</p>
+                    <h3 id="gym-api-title">Gym Membership REST API</h3>
+                    <p class="w3-small w3-text-grey">Java · Spring Boot · Spring Data JPA · H2 · Postman</p>
+                    <p>An API for creating, viewing, updating and deleting gym membership records. It exchanges JSON data and returns a 404 response when a requested member cannot be found.</p>
+                    <p class="w3-small">
+                      <strong>What I worked with:</strong> HTTP requests, Java entity mapping and database access, with Postman used to check responses.</p>
+                    <p>
+                      <a href="downloads/Gym_Membership_API_Source.zip" download class="w3-button green">Download source (ZIP)</a>
+                    </p>
+                    <figure>
+                      <a href="assets/gym-api-members.png" target="_blank" rel="noopener">
+                        <img src="assets/gym-api-members.png" alt="Postman sending GET /members and showing a 200 OK response with gym membership records as JSON" class="project-image">
+                      </a>
+                      <figcaption>GET /members returning JSON in Postman. Screenshot from my assignment report.</figcaption>
+                    </figure>
+                    <details>
+                      <summary>See the missing-member response</summary>
+                      <figure>
+                        <a href="assets/gym-api-not-found.png" target="_blank" rel="noopener">
+                          <img src="assets/gym-api-not-found.png" alt="Postman requesting /members/9 and receiving a 404 Not Found response" class="project-image">
+                        </a>
+                        <figcaption>A request for an unavailable member returns 404 Not Found.</figcaption>
+                      </figure>
+                    </details>
+                  </div>
+                </article>
+              </div>
+              <div class="w3-col l6">
+                <article class="w3-card w3-white w3-margin-bottom">
+                  <div class="w3-container w3-padding-16">
+                    <p class="w3-small w3-text-grey">College assignment</p>
+                    <h3 id="weather-title">Country Weather Dashboard</h3>
+                    <p class="w3-small w3-text-grey">HTML · CSS/W3CSS · JavaScript · Chart.js · REST APIs</p>
+                    <p>A dashboard that filters countries by name, capital, language and currency. Selecting a country loads its details and plots seven days of minimum and maximum temperatures using REST Countries and Open-Meteo.</p>
+                    <p class="w3-small">
+                      <strong>What I worked with:</strong> fetching API data, combining filters and updating page content and charts from user input.</p>
+                    <p>
+                      <a href="downloads/Country_Weather_Dashboard_Source.zip" download class="w3-button green">Download source (ZIP)</a>
+                    </p>
+                    <figure>
+                      <a href="assets/country-weather-forecast.png" target="_blank" rel="noopener">
+                        <img src="assets/country-weather-forecast.png" alt="Country weather dashboard filtered to English-speaking countries, with Ireland selected and a seven-day minimum and maximum temperature chart" class="project-image">
+                      </a>
+                      <figcaption>Country details and a seven-day chart. Screenshot from my assignment report.</figcaption>
+                    </figure>
+                    <details>
+                      <summary>See the dashboard before selection</summary>
+                      <figure>
+                        <a href="assets/country-weather-start.png" target="_blank" rel="noopener">
+                          <img src="assets/country-weather-start.png" alt="Dashboard initial state showing country filters and an alphabetical country list, before a country has been selected" class="project-image">
+                        </a>
+                        <figcaption>The country list loads first; the chart appears after selecting a country.</figcaption>
+                      </figure>
+                    </details>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+        </main>
+        <!-- About, education and future ideas -->
+        <aside class="w3-third">
+          <section id="about" class="w3-card w3-white w3-margin-bottom">
+            <div class="w3-container w3-padding-16">
+              <h2>About me</h2>
+              <p>I came to software after training in metal fabrication, and I’ve also worked in hospitality. Those roles gave me experience working with people, taking responsibility and solving practical problems under pressure.</p>
+              <p>Outside college, I’m interested in combat sports and fitness. I like building applications around subjects I actually use or enjoy.</p>
+              <h3>Tools I’ve used</h3>
+              <p>Java · Python · SQL · HTML · CSS</p>
+              <p class="w3-small">Spring Boot · PyQt5 · SQLAlchemy · SQLite · MySQL · DataGrip · Power BI · GitHub</p>
+              <p class="w3-small">I’m also working on a group newsagent delivery system, where I’m responsible for publications.</p>
+            </div>
+          </section>
+          <section class="w3-card w3-white w3-margin-bottom">
+            <div class="w3-container w3-padding-16">
+              <h2>Education</h2>
+              <p>
+                <b>TUS Athlone</b>
+                <br>Software Design with Artificial Intelligence for Cloud Computing</p>
+              <p class="w3-text-grey">Currently in Year 3</p>
+              <table class="w3-table w3-bordered">
+                <caption>Completed year averages</caption>
+                <tr>
+                  <th scope="row">Year 1</th>
+                  <td>71.08%</td>
+                </tr>
+                <tr>
+                  <th scope="row">Year 2</th>
+                  <td>70.91%</td>
+                </tr>
+              </table>
+              <p class="w3-small">My CV includes a summary of the Year 2 subject results.</p>
+            </div>
+          </section>
+          <section id="ideas" class="w3-card w3-white w3-margin-bottom">
+            <div class="w3-container w3-padding-16">
+              <h2>What I’d like to build</h2>
+              <p class="w3-small">Ideas to develop alongside college, one feature at a time.</p>
+              <h3>Combat sports data explorer</h3>
+              <p>A clearer way to browse fighters, events and results, built around my interest in MMA and boxing.</p>
+              <details>
+                <summary>Where I’d start</summary>
+                <p>Build on the MMA tracker with fighter profiles and event search. More detailed statistics and comparisons could come later.</p>
+              </details>
+              <hr>
+              <h3>Offline desktop assistant</h3>
+              <p>A Python assistant for useful local tasks, with commands I can understand and extend myself.</p>
+              <details>
+                <summary>Where I’d start</summary>
+                <p>A typed command menu for notes and local tools. Voice input would be a later step.</p>
+              </details>
+              <hr>
+              <h3>Gym booking improvements</h3>
+              <p>Extend my college application with database storage and more useful membership and booking checks.</p>
+              <details>
+                <summary>Where I’d start</summary>
+                <p>Related member, class and booking records, followed by duplicate-booking and capacity checks.</p>
+              </details>
+            </div>
+          </section>
+        </aside>
+      </div>
+      <!-- Contact details -->
+      <section id="contact" class="w3-container w3-white w3-padding-24">
+        <h2>Get in touch</h2>
+        <p>I’m looking for a software development placement from January 2027, particularly work involving backend systems and databases.</p>
+        <p>
+          <a href="mailto:coneary12@gmail.com">coneary12@gmail.com</a>
+        </p>
+        <p class="w3-small w3-text-grey">Tullamore, Co. Offaly · Studying in Athlone</p>
+      </section>
+      <footer class="w3-container w3-padding-16 w3-small">
+        <p>Connor Neary · Software Design student<br>Layout adapted from <a href="https://www.w3schools.com/w3css/tryw3css_templates_cv.htm">W3Schools</a>, using W3.CSS.</p>
+      </footer>
+    </div>
+  </body>
+</html>
